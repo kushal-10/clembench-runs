@@ -105,6 +105,6 @@ for version in versions:
         'latency': model_latency    
         }
     latecy_df = pd.DataFrame(csv_data)
-    latecy_df.to_csv(os.path.join(version, 'latency.csv'), index=False)
+    latecy_df.to_csv(os.path.join('Addenda', 'Latency', version+'_latency.csv'), index=False)
     logging.info(f"Saved latency.csv for version : {version}")                                
     
