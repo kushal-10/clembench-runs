@@ -1,0 +1,7 @@
+model,latency
+Llama-3-70b-Instruct-Anyscale,1.7338163117712853
+Llama-3-8B-groq,7.980704733164335
+Llama-3-70B-groq,4.14406746804809
+Llama-3-8b-Instruct-Anyscale,1.0531297961586106
+Llama-3-8B-Together.ai,4.550528523115493
+Llama-3-70B-Together.ai,1.650864899326706
