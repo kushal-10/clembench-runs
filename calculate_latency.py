@@ -105,7 +105,7 @@ for version in versions:
         'latency': model_latency    
         }
     latecy_df = pd.DataFrame(csv_data)
-    if not os.path.exists('Addenda', 'Latency'):
+    if not os.path.exists(os.path.join('Addenda', 'Latency')):
         os.makedirs(os.path.join('Addenda', 'Latency'))
     latecy_df.to_csv(os.path.join('Addenda', 'Latency', version+'_latency.csv'), index=False)
     logging.info(f"Saved latency.csv for version : {version}")                                
