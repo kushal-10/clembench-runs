@@ -32,6 +32,6 @@ jobs:
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git add Addenda/latency_csvs/*.csv  
+          git add Addenda/Latency/*.csv  
           git commit -m "Updated latency csvs on push"
           git push
