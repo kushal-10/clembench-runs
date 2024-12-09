@@ -3,23 +3,28 @@
     [
         {
             "version": "v0.9",
-            "date": "2023-06-01"
+            "release_date": "",
+            "last_updated": ""
         },
         {
             "version": "v1.0",
-            "date": "2023-11-01"
+            "release_date": "",
+            "last_updated": ""
         },
         {
             "version": "v1.5",
-            "date": "2024-03-01"
+            "release_date": "",
+            "last_updated": ""
         },
         {
             "version": "v1.6",
-            "date": "2024-08-15"
+            "release_date": "",
+            "last_updated": ""
         },
         {
             "version": "v1.6.5_multimodal",
-            "date": "2024-09-18"
+            "release_date": "",
+            "last_updated": ""
         }
     ]
 }
