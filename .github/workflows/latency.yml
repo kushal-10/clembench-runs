@@ -3,7 +3,7 @@ name: Run calculate_latency.py on Push
 on:
   push:
     branches:
-      - feat/llmcalc  # Only run when there's a push on this branch
+      - main  # Only run when there's a push on this branch
 
 jobs:
   run-calculate-latency:
