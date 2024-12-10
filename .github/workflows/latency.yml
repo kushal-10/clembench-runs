@@ -28,10 +28,16 @@ jobs:
         run: |
           python calculate_latency.py  # This will execute your script
           
-      - name: Commit and Push CSV files
+      - name: Commit and Push CSV files (if changes detected)
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git add Addenda/Latency/*.csv  
-          git commit -m "Updated latency csvs on push"
-          git push
+
+          # Check for changes
+          if git diff --quiet; then
+            echo "No changes detected. Skipping commit."
+          else
+            git add Addenda/Latency/*.csv  
+            git commit -m "Updated latency csvs on push"
+            git push
+          fi
