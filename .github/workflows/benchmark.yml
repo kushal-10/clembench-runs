@@ -55,11 +55,11 @@ jobs:
             echo "Last commit date: $LAST_COMMIT_DATE"
 
             if [ -n "$FIRST_COMMIT_DATE" ] && [ -n "$LAST_COMMIT_DATE" ]; then
-              # Update JSON
+              # Update JSON, but skip updating release_date for v0.9
               UPDATED_JSON=$(echo "$UPDATED_JSON" | jq --arg version "$VERSION" --arg first "$FIRST_COMMIT_DATE" --arg last "$LAST_COMMIT_DATE" '
                 .versions |= map(
                   if .version == $version then
-                    .release_date = (if .release_date == "" then $first else .release_date end) |
+                    .release_date = (if $version == "v0.9" then .release_date else (if .release_date == "" then $first else .release_date end) end) |
                     .last_updated = $last
                   else .
                   end
