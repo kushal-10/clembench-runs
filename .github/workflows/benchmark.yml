@@ -2,8 +2,9 @@ name: Update Folder Log with Commit Dates
 
 on:
   push:
-    paths:
-      - "**" # Trigger on any file change in the repository
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
   update-json:

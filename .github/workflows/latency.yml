@@ -2,8 +2,9 @@ name: Run calculate_latency.py on Push
 
 on:
   push:
-    branches:
-      - main  # Only run when there's a push on this branch
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
   run-calculate-latency:
