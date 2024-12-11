@@ -21,9 +21,19 @@
       "last_updated": "2024-11-27"
     },
     {
+      "version": "v1.6_multimodal",
+      "release_date": "",
+      "last_updated": ""
+    },
+    {
+      "version": "v1.6.5_ascii",
+      "release_date": "",
+      "last_updated": ""
+    },
+    {
       "version": "v1.6.5_multimodal",
-      "release_date": "2023-08-13",
-      "last_updated": "2024-09-17"
+      "release_date": "",
+      "last_updated": ""
     }
   ]
 }
